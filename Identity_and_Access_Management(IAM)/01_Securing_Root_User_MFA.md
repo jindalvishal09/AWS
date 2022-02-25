@@ -1,6 +1,6 @@
 [<img alt="acosalens" width="300px" src="https://github.com/jindalvishal09/AWS/blob/main/Resources/other/Acosa_logo.png" />](https://acosalens.com)
 
-# 🎯 Securing Root User
+# 🎯 Securing Root User-MFA
 
 ## 🌐 Quick Info
 
