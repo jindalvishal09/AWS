@@ -8,7 +8,7 @@
 
 Root user is the only user in your AWS account which is unristricted and also can't be restricted as it is the super user of your account. In case your usrname/password get's compromised you will loose the complete control of your AWS account. So you need to 
 1. Enable MFA
-2. Delete all access keys for root user to disable programmatic  access from root user.
+2. Delete all access keys for root user to disable programmatic access from root user.[Link to Lab](https://github.com/jindalvishal09/AWS/blob/main/Identity_and_Access_Management(IAM)/02_Securing_Root_User_Remove_Access_Keys.md)
 
 ### ⚡ _What is an Authentication Factor?_
 
