@@ -7,4 +7,4 @@ Acosalens AWS hands on guides are intended to be an open-source resource for clo
 
 * AWS
   * IAM
-    * [Securing Root User](IAM/01_Securing_Root_User.md)
+    * [Securing Root User](Identity_and_Access_Management(IAM)/01_Securing_Root_User.md)
