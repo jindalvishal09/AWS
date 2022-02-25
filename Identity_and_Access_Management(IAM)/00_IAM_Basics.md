@@ -27,9 +27,9 @@ IAM performs 3 operations in general:
 2. Authenticate : Verifying the identity of a user, process, or device, often as a prerequisite to allowing access to resources in an information system. The created users are authenticated by system based on Username/Password/MFA
 3. Authorize: Authorization is permitting an authenticated user the permission to perform a given action on specific resources. Based on permissions and policy assigned to a group or user, actions are allowed or denied.
 
-### ⚡ _IAM Service in AWS?_
+### ⚡ _IAM Service and Root User in AWS?_
 
-IAM service and Root user are the only two ways to access an AWS account as your account trusts IAM- a service and Root- a user completely. And Root being the super user has more power compared to IAM service. There are certain tasks which can be done only by Root user namely:</br><img src="/Resources/IAM_basic/basic_1.png"/>
+**IAM service and Root user** are the only two implicit ways to access an AWS account as your account trusts IAM- a service and Root- a user completely. And Root being the super user has more power compared to IAM service.**Identity federation** can be explicity setup in the AWS account to be a trusted Identity provider. There are certain tasks which can be done only by Root user namely:</br><img src="/Resources/IAM_basic/basic_1.png"/>
 1. **Change your account settings**: This includes the account name, email address, root user password, and root user access keys. Other account settings, such as contact information, payment currency preference, and AWS Regions, don't require root user credentials.
 2. **Restore IAM user permissions**: If the only IAM administrator accidentally revokes their own permissions, you can sign in as the root user to edit policies and restore those permissions.
 3. **Activate IAM access to the Billing and Cost Management console.**
@@ -40,5 +40,14 @@ IAM service and Root user are the only two ways to access an AWS account as your
 8. **Configure an Amazon S3 bucket to enable MFA (multi-factor authentication).**
 9. **Edit or delete an Amazon Simple Storage Service (Amazon S3) bucket policy that includes an invalid virtual private cloud (VPC) ID or VPC endpoint ID.**
 10. **Sign up for GovCloud.**
+
+### ⚡ _Security of IAM and Users in AWS_
+
+IAM is a service provided by AWS without any cost. It's a global resilience managed service by AWS. So security of the cloud (IAM) is taken care of by AWS. Now the users within the account namely **Root user** and **other users created within IAM** needs to be secured.
+1. As **Root User** is a special one, we do three things for the smooth functioning of the account:
+    * **Activate MFA** for root user. [Click for Hands On Lab](https://github.com/jindalvishal09/AWS/blob/main/Identity_and_Access_Management(IAM)/01_Securing_Root_User_MFA.md)
+    * **Remove Access keys** so that nobody can use root user programatically.
+    * **Create admin user or users via IAM** who will act as super user of the account discounted the special powers of root user.
+2. For rest of the users created via IAM we activate MFA and as best practise rotate access keys periodically.
 
 [Reference](https://www.techtarget.com/searchsecurity/definition/identity-access-management-IAM-system)
