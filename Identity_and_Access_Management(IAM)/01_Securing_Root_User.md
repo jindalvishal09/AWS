@@ -1,4 +1,4 @@
-[<img alt="acosalens" width="300px" src="https://assets.zyrosite.com//YBgqZbnEvkulw8yL/Acosa_logo-A3Qn5vgEezFDLaJ7.png" />](https://acosalens.com)
+[<img alt="acosalens" width="300px" src="https://github.com/jindalvishal09/AWS/blob/main/Resources/other/Acosa_logo.png" />](https://acosalens.com)
 
 # 🎯 Securing Root User
 
