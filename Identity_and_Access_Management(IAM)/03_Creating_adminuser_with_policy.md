@@ -21,3 +21,4 @@ we need admin user or users to perfom admin task.
 8. You can add **Tags- optional(Key value pair)** to tag metadata for this user such as department.Click **Next: Review**</br></br><img src="/Resources/admin_user/user_tags.png"/></br></br>
 9. Review details provided till now and Click **Create User**</br></br><img src="/Resources/admin_user/review.png"/></br></br>
 10. You will see a **Success** message providing the details of user created</br></br><img src="/Resources/admin_user/success.png"/></br></br>
+11. Login with IAM admin user created above by using the URL given on success page and activate MFA by follow from step 2 mentioned in [Securing Root User](https://github.com/jindalvishal09/AWS/blob/main/Identity_and_Access_Management(IAM)/01_Securing_Root_User_MFA.md)
