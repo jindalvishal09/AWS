@@ -50,4 +50,10 @@ IAM is a service provided by AWS without any cost. It's a global resilience mana
     * **Create admin user or users via IAM** who will act as super user of the account discounted the special powers of root user.
 2. For rest of the users created via IAM we activate MFA and as best practise rotate access keys periodically.
 
+### ⚡ _IAM Account Alias_
+
+By default the login URL for your account is **https://-accountid-.signin.aws.amazon.com/console.** This is a bit cumbersome to remember. For this you have an option to replace the account id with an alias like one for prod account and one for dev account instead of remembering the different account id's. **Keep in mind alias need to be unique globally like your account id.** You can update the alias in the IAM service as shown below.</br></br><img src="/Resources/IAM_basic/account_allias.png"/>
+
+The sign in URL hence genereated like **https://-alias-.signin.aws.amazon.com/console.** is unique to your account. And this can be bookmarked to login via IAM user to the particular account.
+
 [Reference](https://www.techtarget.com/searchsecurity/definition/identity-access-management-IAM-system)
