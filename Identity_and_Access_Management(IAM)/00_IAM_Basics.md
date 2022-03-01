@@ -65,11 +65,12 @@ IAM performs 3 operations in general:
 ### ⚡ _Security of IAM and Users in AWS_
 
 IAM is a service provided by AWS without any cost. It's a global resilience managed service by AWS. So security of the cloud (IAM) is taken care of by AWS. Now the users within the account namely **Root user** and **other users created within IAM** needs to be secured.
-1. As **Root User** is a special one, we do three things for the smooth functioning of the account:
-    * **Activate MFA** for root user. [Click for Hands On Lab](https://github.com/jindalvishal09/AWS/blob/main/Identity_and_Access_Management(IAM)/01_Securing_Root_User_MFA.md)
-    * **Remove Access keys** so that nobody can use root user programatically. [Click for Hands On Lab](https://github.com/jindalvishal09/AWS/blob/main/Identity_and_Access_Management(IAM)/02_Securing_Root_User_Remove_Access_Keys.md)
-    * **Create admin user or users via IAM** who will act as super user of the account discounted the special powers of root user.
-2. For rest of the users created via IAM we activate MFA and as best practise rotate access keys periodically.
+1. As **Root User** is a special one, we do following for the smooth functioning of the account:
+    * **Activate MFA** for root user. [Click for Hands On Lab](01_Securing_Root_User_MFA.md)
+    * **Remove Access keys** so that nobody can use root user programatically. [Click for Hands On Lab](02_Securing_Root_User_Remove_Access_Keys.md)
+    * **Create admin user or users via IAM** who will act as super user of the account discounted the special powers of root user. [Click for Hands On Lab](03_Creating_adminuser_with_policy.md) 
+    * **Create admin user group** instead of attaching policy directly to the user create a group and attach policy to the group and add user to the group.On similar lines different groups for developer/tester/etc. can be created. [Click for Hands On Lab](04_Creating_admin_group.md). 
+2. For rest of the users created via IAM we activate MFA and as best practise rotate access keys (if generated) periodically.
 
 ### ⚡ _IAM Account Alias_
 
