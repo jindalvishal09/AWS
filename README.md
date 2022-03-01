@@ -10,3 +10,4 @@ Acosalens AWS hands on guides are intended to be an open-source resource for clo
     * [IAM Basics](Identity_and_Access_Management(IAM)/00_IAM_Basics.md)
     * [Securing Root User-MFA](Identity_and_Access_Management(IAM)/01_Securing_Root_User_MFA.md)
     * [Securing Root User-Removing Access Keys](Identity_and_Access_Management(IAM)/02_Securing_Root_User_Remove_Access_Keys.md)
+    * [Creating Admin User- With attached policy](Identity_and_Access_Management(IAM)/03_Creating_adminuser_with_policy.md)
