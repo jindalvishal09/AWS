@@ -27,20 +27,6 @@ IAM performs 3 operations in general:
 2. Authenticate : Verifying the identity of a user, process, or device, often as a prerequisite to allowing access to resources in an information system. The created users are authenticated by system based on Username/Password/MFA
 3. Authorize: Authorization is permitting an authenticated user the permission to perform a given action on specific resources. Based on permissions and policy assigned to a group or user, actions are allowed or denied.
 
-### ⚡ _IAM Service and Root User in AWS?_
-
-**IAM service and Root user** are the only two implicit ways to access an AWS account as your account trusts IAM- a service and Root- a user completely. And Root being the super user has more power compared to IAM service.**Identity federation** can be explicity setup in the AWS account to be a trusted Identity provider. There are certain tasks which can be done only by Root user namely:</br><img src="/Resources/IAM_basic/basic_1.png"/>
-1. **Change your account settings**: This includes the account name, email address, root user password, and root user access keys. Other account settings, such as contact information, payment currency preference, and AWS Regions, don't require root user credentials.
-2. **Restore IAM user permissions**: If the only IAM administrator accidentally revokes their own permissions, you can sign in as the root user to edit policies and restore those permissions.
-3. **Activate IAM access to the Billing and Cost Management console.**
-4. **View certain tax invoices**: An IAM user with the aws-portal:ViewBilling permission can view and download VAT invoices from AWS Europe, but not AWS Inc. or Amazon Internet Services Private Limited (AISPL).
-5. **Close your AWS account.**
-6. **Change your AWS Support plan or Cancel your AWS Support plan.**
-7. **Register as a seller in the Reserved Instance Marketplace.**
-8. **Configure an Amazon S3 bucket to enable MFA (multi-factor authentication).**
-9. **Edit or delete an Amazon Simple Storage Service (Amazon S3) bucket policy that includes an invalid virtual private cloud (VPC) ID or VPC endpoint ID.**
-10. **Sign up for GovCloud.**
-
 ### ⚡ _IAM is made up of_
 
 1. **Users**- An AWS Identity and Access Management (IAM) user is an entity that you create in AWS to represent the person or application that uses it to interact with AWS. A user in AWS consists of a name and credentials.
