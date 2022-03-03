@@ -4,11 +4,9 @@
 
 ## 🌐 Quick Info
 
-### ⚡ _Why to secure a Root User?_
+### ⚡ _What is Password Policy?_
 
-Root user is the only user in your AWS account which is unristricted and also can't be restricted as it is the super user of your account. In case your usrname/password get's compromised you will loose the complete control of your AWS account. So you need to 
-1. Enable MFA
-2. Delete all access keys for root user to disable programmatic access from root user.[Link to Lab](https://github.com/jindalvishal09/AWS/blob/main/Identity_and_Access_Management(IAM)/02_Securing_Root_User_Remove_Access_Keys.md)
+A password policy defines the password strength rules that are used to determine whether a new password is valid. A password strength rule is a rule to which a password must conform. For example, password strength rules might specify that the minimum number of characters of a password must be 5.
 
 ## ⚡ Detailed Steps
 
@@ -21,5 +19,6 @@ Root user is the only user in your AWS account which is unristricted and also ca
 7. On successful setup will get the following message **"You have successfully assigned virtual MFA".** </br></br><img src="/Resources/IAM/01_Securing Root User/step_7.png"/></br></br>
 8. Now "Multi-factor authentication (MFA)" is enabled for the root user.</br></br><img src="/Resources/IAM/01_Securing Root User/step_8.png"/></br></br>
 
+### ⚡ _References_
 
-[Reference](https://www.sumologic.com/glossary/authentication-factor/)
+* [Password policies](https://www.ibm.com/docs/en/spim/2.0.0?topic=administration-password-policies)
