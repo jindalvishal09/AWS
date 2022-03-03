@@ -20,8 +20,8 @@ by default all access to an AWS account and resources is denied by default excep
 
 ### ⚡ _Securing AWS Account Root User_
 As **Root User** is a special one, we do following for securing it and smooth functioning of the account:
-1. **Activate MFA** for root user. [Click for Hands On Lab](/Identity_and_Access_Management(IAM)/01_Securing_Root_User_MFA.md)    
-2. **Remove Access keys** so that nobody can use root user programatically. [Click for Hands On Lab](/Identity_and_Access_Management(IAM)/02_Securing_Root_User_Remove_Access_Keys.md)
+1. **Activate MFA** for root user. [Click for Hands On Lab](01_Securing_Root_User_MFA.md)    
+2. **Remove Access keys** so that nobody can use root user programatically. [Click for Hands On Lab](02_Securing_Root_User_Remove_Access_Keys.md)
 ### ⚡ _References_
 
 * [AWS Organizations FAQs](https://aws.amazon.com/organizations/faqs/)
